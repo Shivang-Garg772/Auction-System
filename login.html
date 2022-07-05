@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+          body {
+            background-image: url('login1.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+          }
+            input[type=text] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+              
+              input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+              
+              input[type=submit]:hover {
+                background-color: #45a049;
+              }
+              input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+              
+            </style>
+    </head>
+    <body>
+        <H1><b><marquee><u>Login To your page</u></marquee></b></H1>
+        <form method="post" action="login_check.php">
+            Enter your Name<input type="text" name="name" id="l1" required><br>
+            <br>
+            Enter your Email<input type="text" name="email" id="l3" required><br>
+            Enter your Password<input type="password" name="password" id="l2" required><br>
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

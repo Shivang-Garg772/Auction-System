@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Bidder Page</title>
+        <style>
+          body {
+            background-image: url('bidd.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+          }
+            input[type=text], input[type=password], input[type=email], input[type=number] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+              
+              input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+              
+              input[type=submit]:hover {
+                background-color: #45a049;
+              } 
+            </style>
+    </head>
+    <body>
+        <h1 style="color:DarkMagenta"><b><marquee>Place your Bid</marquee></b></h1>
+        <form method="post" action="Bidding.php">
+           <h2><b>Enter your Email</b></h2><input type="email" name="email"> <br>
+           <h2><b>Enter I'D of the auction</b></h2><input type="number" name="id"><br>
+           <h2><b>Enter your bid amount</b></h2><input type="number" name="amount"><br>
+           <input type="submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Auction item</title>
+        <style>
+          body {
+            background-image: url('host_auc.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+          }
+            input[type=text], input[type=password], input[type=email], input[type=number] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+              
+              input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+              
+              input[type=submit]:hover {
+                background-color: #45a049;
+              } 
+            </style>
+    </head>
+    <body>
+       <h1><marquee><b> Enter The Details Of the item to be Auctioned:</b></marquee></h1><br>
+        <form method="post" action="auction_item_insert.php">
+            <b>Enter Email</b><input type="email" name="email" id="a1"><br>
+            <b>Enter your Password</b><input type="password" name="pass" id="a2"><br>
+            <b>Enter the name to be auctioned:</b><input type="text" name="name" id="a3"><br>
+            <b>Category:</b><input type="text" name="cate" id="a4"><br>
+            <b>Price:</b><input type="text" name="price" id="a5"><br>
+            <b>Enter auction I'd</b><input type="number" name="id"><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
